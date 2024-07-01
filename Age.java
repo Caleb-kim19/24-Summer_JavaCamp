@@ -1,10 +1,25 @@
-import java.util.Scanner;
-
 class Age {
-  Scanner s = new Scanner(System.in);
-  System.out.print("Enter a birth year > ");
-  	int birthyear = s.nextInt();
-  	int age = 2022 - birthyear + 1;
-    
-  	System.out.println("You are "+age+" years old.");
+  private int birthyear;
+  private int age;
+
+  public int getBirthyear() {
+    return birthyear;
+  }
+
+  public void setBirthyear(int birthyear) {
+    this.birthyear = birthyear;
+  }
+
+  public int getAge() {
+    return age;
+  }
+
+  public void setAge(int age) {
+    this.age = age;
+  }
+
+  public void calAge(int birthyear) {
+    this.age = 2024 - birthyear + 1;
+  }
+
 }
